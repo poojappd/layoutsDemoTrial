@@ -1,6 +1,7 @@
 package com.example.layoutsdemotrial
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -22,5 +23,7 @@ class ImageViewActivity : AppCompatActivity() {
     }
     fun boc(view:View){
         Log.e(TAG,"CLICKED")
+        startActivity(Intent(this, ScrollViewActivity::class.java))
+
     }
 }
